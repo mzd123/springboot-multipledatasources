@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mzd.multipledatasources.mapper.TransactionMapping1">
+	<insert id="save" parameterType="com.mzd.multipledatasources.bean.TestBean">
+		insert into cs_test
+		values(#{id},
+		#{userid},#{score},#{classid})
+	</insert>
+</mapper>
